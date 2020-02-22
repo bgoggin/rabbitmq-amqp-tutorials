@@ -18,8 +18,8 @@ public class RabbitAmqpTutorialsApplication {
    @Bean
    public CommandLineRunner usage() {
       return args -> {
-         LOGGER.info("This app uses Spring Profiles to control its behavior.\n");
-               LOGGER.info("Sample usage: java -jar {} --spring.profiles.active=hello-world,sender", this.getClass().getName());
+         System.out.println("This app uses Spring Profiles to control its behavior.\n");
+         System.out.println("Sample usage: java -jar RabbitAmqpTutorialsApplication-0.0.1-SNAPSHOT.jar --spring.profiles.active=hello-world,sender");
       };
    }
 
